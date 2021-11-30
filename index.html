@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>Riotcat.org - PDF Konvertieren</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/pdf.js"></script>
+<script src="js/pdf.worker.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">PDF Konvertieren</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container pt-5">
+        <h3>PDF Bild zu Text konvertieren</h3>
+        <div class="card mt-5">
+            <div class="card-header">Anleitung</div>
+            <div class="card-body">
+                Das Ziel ist es eingescannte oder bearbeitete PDF Text wieder makierbar zu machen.<br />
+                Wähle ein PDF aus und klicke die Seiten an, die konvertiert werden soll. Anschließend klicke auf den Button "Konvertieren".<br />
+                Wenn der Vorgang abgeschlossen ist, erscheint ein Download Button. Je nach Anzahl der zu konvertierenden Seiten kann der Vorgang einige Minuten dauern.<br />
+                <br />
+                Die maximale Dateigröße beträgt: 50MB.<br />
+                <br />
+                Schreibt mir gerne bei Fragen und Problemen eine Mail an <a href="jonny@riotcat.org">jonny@riotcat.org</a>.
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-body">
+                <div id="preview-container">
+                    <button id="upload-dialog">PDF auswählen</button>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="pdf-loader">
+                        <span id="alert-text">Verarbeite..</span>
+                        <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <span id="pdf-name"></span>
+                    <input type="file" id="pdf-file" name="pdf" accept="application/pdf" />
+                    <button id="upload-button">Konvertieren</button>
+                    <button id="download-pdf">Herunterladen</button>
+                    <button id="cancel-pdf">Abbrechen</button>
+                    <div id="pdf-preview-headline">
+                        <h3>Seiten, die konvertiert werden sollen:</h3>
+                        <hr>
+                    </div>
+                    <div id="pdf-preview-wrapper"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

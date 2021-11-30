@@ -1,0 +1,130 @@
+
+#preview-container {
+    margin: 0px auto;
+}
+
+#upload-dialog {
+    padding: 5px;
+    border: 1px solid #336699;
+    background-color: white;
+    color: #336699;
+    background: none;
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#pdf-file {
+    display: none;
+}
+
+#pdf-loader {
+	display: none;
+}
+
+.pdf-preview {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.pdf-page-wrapper {
+    align-self: center;
+}
+
+#pdf-preview-wrapper {
+    display: none;
+    height: auto;
+    text-align: center;
+    grid-auto-columns: 200px;
+    grid-template-areas: "a";
+    gap: 10px;
+}
+@media screen and (min-width:450px){
+    #pdf-preview-wrapper {
+        grid-template-areas: "a a";
+        gap: 5px;
+    }
+}
+@media screen and (min-width:800px){
+    #pdf-preview-wrapper {
+        grid-template-areas: "a a a";
+    }
+}
+@media screen and (min-width:1250px){
+    #pdf-preview-wrapper {
+        grid-template-areas: "a a a a";
+    }
+}
+@media screen and (min-width:1400px){
+    #pdf-preview-wrapper {
+        grid-template-areas: "a a a a a";
+    }
+}
+.pdf-select-text {
+    text-align: center;
+    width: 150px;
+    display: inline-block;
+}
+
+#pdf-name {
+    display: none;
+    vertical-align: middle;
+    color: #336699;
+    margin: 0 15px;
+    max-width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#upload-button {
+    padding: 5px;
+    border: 1px solid #336699;
+    background-color: #336699;
+    color: white;
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+    display: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 2px;
+}
+#download-pdf {
+    display: none;
+    padding: 5px;
+    border: 1px solid #336699;
+    background-color: #336699;
+    color: white;
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+    display: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 2px;
+}
+#cancel-pdf {
+    display: none;
+    vertical-align: middle;
+    padding: 0px;
+    border: none;
+    color: #777777;
+    background-color: white;
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 0 0 0 15px;
+}
+#pdf-preview-headline {
+    display: none;
+}
