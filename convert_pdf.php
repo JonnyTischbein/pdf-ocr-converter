@@ -75,7 +75,8 @@ function convert_pdf(){
     }
 
     foreach (get_ranges(array_keys($_POST)) as $range){
-        $out = shell_exec("cd uploads; ../ocr_convert_page.sh \"" . basename($_FILES['pdf']['name']) . "\" ${range[0]} ${range[1]} >> /var/log/ocr_convert.log");
+        // Redirect to /var/log/ocr_convert.log but need to touch set permissions first!
+        $out = shell_exec("cd uploads; ../ocr_convert_page.sh \"" . basename($_FILES['pdf']['name']) . "\" ${range[0]} ${range[1]} > /dev/null");
         if ($out != ""){
             echo "Error while converting!";
             return 4;

@@ -128,3 +128,13 @@
 #pdf-preview-headline {
     display: none;
 }
+
+#dropbox {
+    width: auto;
+    height:200px;
+    background-color: lightgrey;
+    outline: 2px dashed grey;
+    outline-offset:-0.5em;
+    padding: 3em;
+    color: black;
+}
